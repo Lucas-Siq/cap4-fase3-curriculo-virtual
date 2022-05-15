@@ -1,0 +1,53 @@
+.principalhome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+    margin-top: 90px;
+}
+
+.logo{
+    height: 600px;
+    width: auto;
+}
+
+.logo p{
+    text-align: center;
+}
+
+.botoeshome{
+    height: 100px;
+    width: 480px;
+    background-color: #fff;
+    border-top: 1px solid GRAY;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Button7{
+    width: 200px;
+    height: 50px;
+    background-color: #5AB280;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.Button7 link{
+    text-decoration: none;
+}
+
+.Button6{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+}
+

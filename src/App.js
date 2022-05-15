@@ -1,11 +1,11 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-import Home from './components/pages/Home'
-import DadosPessoais from './components/pages/DadosPessoais'
-import Formacao from './components/pages/Formacao'
-import Experiencia from './components/pages/Experiencia'
-import Hobbies from './components/pages/Hobbies'
-import CurriculoVirtual from './components/pages/CurriculoVirtual'
-import Header from './components/common-components/Header'
+import Home from './pages/Home'
+import DadosPessoais from './pages/DadosPessoais'
+import Formacao from './pages/Formacao'
+import Experiencia from './pages/Experiencia'
+import Hobbies from './pages/Hobbies'
+import CurriculoVirtual from './pages/CurriculoVirtual'
+import Header from './common-components/Header'
 
 function App() {
   return (
@@ -38,6 +38,5 @@ function App() {
    </Router>
   );
 }
-
 
 export default App;

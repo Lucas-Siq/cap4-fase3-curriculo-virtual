@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './layouts/DadosPessoais.module.css'
 import { useForm } from 'react-hook-form';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import {BsArrowRight} from 'react-icons/bs';
 import {BsArrowLeft} from 'react-icons/bs';
 
-function Formacao() {
+function Experiencia() {
 
     const {register, handleSubmit, setValue, formState: { errors }} = useForm();
 
@@ -17,23 +17,23 @@ function Formacao() {
     return (
                 
         <section className={styles.main2}>
-        <h2> Comece inserindo os dados de <span className={styles.span1}>formação:</span></h2>
+        <h2> Comece inserindo os dados de <span className={styles.span1}>experiencia:</span></h2>
 
         <div className={styles.form}>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <h5>Instituição de Ensino</h5>
-                <label className={styles.field2} htmlFor="ies">
-                    <input className={styles.Ies} type='text' {...register('ies')} placeholder='FIAP'></input>
+                <h5>Título do cargo</h5>
+                <label className={styles.field2} htmlFor="titulocargo">
+                    <input className={styles.titulocargo} type='text' {...register('titulocargo')} placeholder='Auxiliar Administrativo'></input>
                 </label>
 
-                <h5>Diploma</h5>
-                <label className={styles.field3} htmlFor="diploma">
-                    <input className={styles.diploma} type='text' {...register('diploma')} placeholder='Graduação em Administração'></input>
+                <h5>Tipo de emprego</h5>
+                <label className={styles.field3} htmlFor="tipoemprego">
+                    <input className={styles.tipoemprego} type='text' {...register('tipoemprego')} placeholder='Tempo Integral'></input>
                 </label>
 
-                <h5>Área de estudo</h5>
-                <label className={styles.field2} htmlFor="areadeestudo">
-                    <input className={styles.AreadeEstudo} type='text' {...register('areadeestudo')} placeholder='Administração'></input>
+                <h5>Nome da Empresa</h5>
+                <label className={styles.field2} htmlFor="nomeempresa">
+                    <input className={styles.nomeempresa} type='text' {...register('nomeempresa')} placeholder='Loft S. A.'></input>
                 </label>
 
                 <h5>localidade</h5>
@@ -51,13 +51,13 @@ function Formacao() {
                 </label>
 
                 <h5>Descrição</h5>
-                <label className={styles.field3} htmlFor="descricao">
-                    <input className={styles.descricao} type='text' {...register('descricao')} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod '></input>
+                <label className={styles.field3} htmlFor="descricao2">
+                    <input className={styles.descricao2} type='text' {...register('descricao2')} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod '></input>
                 </label> 
                 <div className={styles.botoes}>
-                <button className={styles.Button4}><span className={styles.arrowbutton1}><BsArrowLeft /> </span><Link to="/DadosPessoais" >Voltar <span className={styles.arrowbutton}><BsArrowRight /> </span></Link></button>
+                <button className={styles.Button4}><span className={styles.arrowbutton1}><BsArrowLeft /> </span><Link to="/Formacao" >Voltar <span className={styles.arrowbutton}><BsArrowRight /> </span></Link></button>
                 
-                <button type="submit" className={styles.Button3}><Link to="/Experiencia" >Avançar <span className={styles.arrowbutton}><BsArrowRight /> </span></Link></button>
+                <button type="submit" className={styles.Button3}><Link to="/Hobbies" >Avançar <span className={styles.arrowbutton}><BsArrowRight /> </span></Link></button>
                 </div>
             </form>
         </div> 
@@ -67,4 +67,4 @@ function Formacao() {
     )
 }
 
-export default Formacao
+export default Experiencia

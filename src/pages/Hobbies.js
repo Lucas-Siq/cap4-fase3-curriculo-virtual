@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './layouts/DadosPessoais.module.css'
 import { useForm } from 'react-hook-form';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import {BsArrowRight} from 'react-icons/bs';
 import {BsArrowLeft} from 'react-icons/bs';
 
